@@ -9,6 +9,8 @@
     <canvas id="unity-canvas" width=1280 height=720 style="width: 1280px; height: 720px; background: #231F20"></canvas>
     <script src="Build/Final Web.loader.js"></script>
     <script>
+      let unityInstance = document.getElementById("unity-canvas");
+      unityInstance.volume = 0.5;
       createUnityInstance(document.querySelector("#unity-canvas"), {
         dataUrl: "Build/Final Web.data",
         frameworkUrl: "Build/Final Web.framework.js",
